@@ -1,0 +1,28 @@
+.glass {
+  /* background styles */
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  /*for compatibility with older browsers*/
+  /* background-image: linear-gradient(green, lightgreen); */
+
+  /* text styles */
+  text-decoration: none;
+  color: #fff;
+  /* font-size: 25px; */
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.glass:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: 50%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.2)
+  );
+}
