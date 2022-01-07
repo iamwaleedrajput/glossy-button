@@ -29,9 +29,9 @@ const Button = (props) => {
       name={props.name}
       value={props.value}
       disabled={props.disabled}
-      onClick={props.handleClick}
+      onClick={props.onClick}
     >
-      {props.label}
+      {props.children}
     </button>
   );
 };
